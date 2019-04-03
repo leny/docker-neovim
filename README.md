@@ -16,8 +16,8 @@
 
 With `bash`/`zsh`:
 
-    docker run -it -v $(pwd):/src neovim
+    docker run -it -v $(pwd):/src leny/neovim
 
 With `fish`:
 
-    docker run -it -v (pwd):/src neovim
+    docker run -it -v (pwd):/src leny/neovim
