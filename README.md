@@ -12,6 +12,12 @@
 
     docker build -t neovim .
 
+### Deploy
+
+    docker login
+    docker tag neovim leny/neovim:latest
+    docker push leny/neovim:latest
+
 ## Use
 
 With `bash`/`zsh`:
