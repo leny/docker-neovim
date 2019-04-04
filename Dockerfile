@@ -10,7 +10,7 @@ RUN apk add --no-cache --virtual .build-deps g++ python3-dev \
     && pip3 install --upgrade neovim \
     && npm install -g neovim
 
-ENV FZF_DEFAULT_COMMAND ag --hidden --ignore .git -g \"\" /src
+ENV FZF_DEFAULT_COMMAND ag --hidden --ignore .git -g \"\"
 
 RUN cd /root \
     && git clone https://github.com/leny/pweneovim ~/.pweneovim \
@@ -23,4 +23,4 @@ RUN cd /root \
 
 VOLUME /src
 
-CMD ["nvim", "/src"]
+CMD ["nvim", "+cd /src", "./src"]
