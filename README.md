@@ -4,10 +4,6 @@
 
 * * *
 
-> ⚠️ **NOTE:** this is an heavy *work in progress*
-
-* * *
-
 ## Build
 
     docker build -t neovim .
@@ -27,3 +23,7 @@ With `bash`/`zsh`:
 With `fish`:
 
     docker run -it -v (pwd):/src leny/neovim
+
+* * *
+
+> ☝️ **NOTE:** this is complete and working. The used config is stored [in a separate repository](https://github.com/leny/pweneovim). The image is kinda heavy (±400Mb), and due to the nature of neovim and the plugins, I'm not sure I can do better at the moment.
